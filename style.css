@@ -1,0 +1,120 @@
+.body {
+  font-family: "Arial", sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.container {
+  width: 85%;
+  max-width: 900px;
+  background: #fff;
+  margin: 30px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 15px;
+}
+
+.profile-pic {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 2px solid #999;
+}
+
+.header-center {
+  text-align: left;
+  flex: 1;
+  padding: 0 20px;
+}
+
+.header-center h1 {
+  margin-bottom: 10px;
+}
+
+.header-right {
+  text-align: right;
+}
+
+.header-right ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.header-right li {
+  margin-bottom: 5px;
+}
+
+
+.deskripsi {
+  margin-top: 20px;
+  line-height: 1.6;
+}
+
+.multimedia {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+
+.video-section, .gallery-section, .attachments {
+  flex: 1 1 30%;
+  margin: 10px;
+}
+
+video {
+  width: 100%;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+.attachments ul {
+  list-style: none;
+  padding: 0;
+}
+
+.attachments a {
+  text-decoration: none;
+  color: #0066cc;
+}
+
+.attachments a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0.9em;
+  color: #666;
+}
