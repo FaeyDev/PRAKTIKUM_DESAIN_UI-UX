@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drink Freeze</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <nav class="nav container">
+            <a href="#" class="nav__logo">Drink Freeze</a>
+            <div class="nav__menu">
+                <ul class="nav__list">
+                    <li class="nav__item"><a href="#" class="nav__link active">Drink</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Coffee</a></li>
+                    <li class="nav__item"><a href="#" class="nav__link">Juice</a></li>
+                </ul>
+            </div>
+            <div class="nav__actions">
+                <i class='bx bx-search' id="search-icon"></i>
+                <div class="nav__cart">
+                    <i class='bx bx-cart'></i>
+                    <span id="cart-count" class="cart__count">0</span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="main">
+        <div class="product-container container">
+            <div class="breadcrumbs">
+                <a href="#">Home</a> > <a href="#">Minuman</a> > </span>
+            </div>
+
+            <div class="product-details">
+                <div class="product-gallery">
+                    <div class="main-image">
+                        <img src="https://images.unsplash.com/photo-1572498288219-abd614a84163?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80" alt="Es Kopi Karamel" id="main-product-image">
+                    </div>
+                    <div class="thumbnail-images">
+                        <img src="foto/foto1.jpg" alt="Tampilan 1" class="thumbnail active">
+                        <img src="foto/foto2.jpg" alt="Tampilan 2" class="thumbnail">
+                        <img src="foto/foto3.jpg" alt="Tampilan 3" class="thumbnail">
+                    </div>
+                </div>
+
+                <div class="product-info">
+                    <h1>Drink</h1>
+                    <div class="product-rating">
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star'></i>
+                        <i class='bx bxs-star-half'></i>
+                        <span>5.0 (120 ulasan)</span>
+                    </div>
+                    <p class="product-price">Rp. 25.000</p>
+
+                    <div class="variant-group">
+                        <p class="variant-title">Opsi Pilihan :</p>
+                        <div class="options" id="sugar-options">
+                            <button class="option-btn active" data-value="Normal">Mango Tea</button>
+                            <button class="option-btn" data-value="Less Sugar">Oriental Red Tea</button>
+                            <button class="option-btn" data-value="No Sugar">Peach Sitrus</button>
+                        </div>
+                    </div>
+
+                    <div class="variant-group">
+                        <p class="variant-title">Pilih Ukuran:</p>
+                        <div class="options" id="size-options">
+                            <button class="option-btn active" data-value="Regular">Regular</button>
+                            <button class="option-btn" data-value="Large">Large</button>
+                        </div>
+                    </div>
+
+                    <div class="purchase-actions">
+                        <div class="quantity-selector">
+                            <button id="btn-minus">-</button>
+                            <input type="text" value="1" id="quantity-input" readonly>
+                            <button id="btn-plus">+</button>
+                        </div>
+                        <button class="add-to-cart-btn">
+                            <i class='bx bx-cart-add'></i>
+                            <span>Tambah ke Keranjang</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="product-description">
+                <h2>Deskripsi Produk</h2>
+                <p>
+                    Nikmati kesegaran Minuman Di Toko kami, disajikan dingin untuk menyegarkan harimu.
+                </p>
+                <p>
+                    Cocok dinikmati saat santai, bekerja, atau berkumpul bersama teman. Pesan sekarang dan rasakan sensasi kenikmatan di setiap tegukan!
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 DrinkFreeze. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

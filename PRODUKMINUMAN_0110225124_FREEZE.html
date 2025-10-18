@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Freeze Shop</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="header">
+    <nav class="nav container">
+    <a href="#" class="nav__logo">Freeze Shop</a>
+
+    <div class="nav__menu">
+        <ul class="nav__list">
+        <li class="nav__item"><a href="#" class="nav__link active">Drink</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Coffee</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Juice</a></li>
+        </ul>
+    </div>
+
+    <div class="nav__actions">
+        <button type="button" id="search-icon" aria-label="Cari produk" class="icon-btn">
+        <i class="bx bx-search"></i>
+        </button>
+        <div class="nav__cart">
+        <button type="button" aria-label="Buka keranjang" class="icon-btn">
+            <i class="bx bx-cart"></i>
+            <span id="cart-count" class="cart__count">0</span>
+        </button>
+        </div>
+    </div>
+    </nav>
+</header>
+
+<main class="main">
+    <div class="product-container container">
+    <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <a href="#">Home</a> › <a href="#">Minuman</a>
+    </nav>
+
+    <div class="product-details">
+        <div class="product-gallery">
+        <figure class="main-image">
+            <img src="https://images.unsplash.com/photo-1572498288219-abd614a84163?auto=format&fit=crop&w=687&q=80"
+                alt="Es Kopi Karamel" id="main-product-image">
+        </figure>
+
+        <div class="thumbnail-images">
+            <img src="foto/foto1.jpg" alt="Tampilan 1" class="thumbnail active">
+            <img src="foto/foto2.jpg" alt="Tampilan 2" class="thumbnail">
+            <img src="foto/foto3.jpg" alt="Tampilan 3" class="thumbnail">
+        </div>
+        </div>
+
+        <div class="product-info">
+        <h1>Drink</h1>
+
+        <div class="product-rating">
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star"></i>
+            <i class="bx bxs-star-half"></i>
+            <span>5.0 (120 ulasan)</span>
+        </div>
+
+        <p class="product-price">Rp 25.000</p>
+
+        <section class="variant-group">
+            <h2 class="variant-title">Opsi Pilihan</h2>
+            <div class="options" id="sugar-options">
+            <button type="button" class="option-btn active" data-value="Mango Tea">Mango Tea</button>
+            <button type="button" class="option-btn" data-value="Oriental Red Tea">Oriental Red Tea</button>
+            <button type="button" class="option-btn" data-value="Peach Citrus">Peach Citrus</button>
+            </div>
+        </section>
+
+        <section class="variant-group">
+            <h2 class="variant-title">Pilih Ukuran</h2>
+            <div class="options" id="size-options">
+            <button type="button" class="option-btn active" data-value="Regular">Regular</button>
+            <button type="button" class="option-btn" data-value="Large">Large</button>
+            </div>
+        </section>
+
+        <div class="purchase-actions">
+            <div class="quantity-selector">
+            <button type="button" id="btn-minus" aria-label="Kurangi jumlah">−</button>
+            <input type="text" value="1" id="quantity-input" readonly aria-label="Jumlah produk">
+            <button type="button" id="btn-plus" aria-label="Tambah jumlah">+</button>
+            </div>
+
+            <button type="button" class="add-to-cart-btn">
+            <i class="bx bx-cart-add"></i>
+            <span>Tambah ke Keranjang</span>
+            </button>
+        </div>
+        </div>
+    </div>
+
+    <section class="product-description">
+        <h2>Deskripsi Produk</h2>
+        <p>Nikmati kesegaran minuman di toko kami, disajikan dingin untuk menyegarkan harimu.</p>
+        <p>Cocok dinikmati saat santai, bekerja, atau berkumpul bersama teman. Pesan sekarang dan rasakan sensasi kenikmatan di setiap tegukan!</p>
+    </section>
+    </div>
+</main>
+
+<footer class="footer">
+    <p>&copy; 2025 Freeze Shop. All rights reserved.</p>
+</footer>
+
+ <script src="script.js"></script>
+</body>
+</html>
