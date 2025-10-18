@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hasil Pemesanan Barang</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <nav>
+        <a href="#">Home</a>
+        <a href="#">Register</a>
+        <a href="#">Policy</a>
+        <a href="#">About</a>
+      </nav>
+    </header>
+
+    <h2>Hasil Pemesanan Barang</h2>
+
+    <div id="result">
+      <img id="previewImage" src="productimage/foto.jpg" alt="Product Image" style="width:150px;">
+      <p><strong>Title:</strong> <p><span id="resTitle"></span></p>
+      <p><strong>Description:</strong> <span id="resDescription"></span></p>
+      <p><strong>Total Amount:</strong> Rp24.999.999</p>
+      <p><strong>Pay to:</strong> <span id="resAccount"></span></p>
+      <p><strong>Payment Type:</strong> Debit</p>
+      <p><strong>Account Holder:</strong> <span id="resHolder"></span></p>
+      <p><strong>Send to Mobile:</strong> <span id="resMobile"></span></p>
+      <p><strong>Send to Email:</strong> <span id="resEmail"></span></p>
+    </div>
+
+    <button class="btn" onclick="window.location.href='form-pemesanan.html'">Back to Form</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
