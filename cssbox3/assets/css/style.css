@@ -1,0 +1,95 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+}
+
+.layout {
+    width: 850px;
+    height: 600px;
+    margin: 40px auto;
+    border: 3px solid black;
+    background-color: white;
+    position: relative;
+    padding: 10px;
+}
+
+.browser {
+    width: 100%;
+    border: 2px solid black;
+    border-collapse: collapse;
+    background-color: #e0e0e0;
+    margin-bottom: 10px;
+}
+
+.browser td {
+    border: 2px solid black;
+    padding: 8px;
+}
+
+.logo {
+    width: 120px;
+    background-color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.address-bar {
+    background-color: white;
+    text-align: left;
+    padding-left: 10px;
+    font-family: monospace;
+}
+
+.box {
+    position: absolute;
+    border: 2px solid black;
+}
+
+.kuning {
+    background-color: yellow;
+    top: 90px;
+    left: 20px;
+    width: 120px;
+    height: 70px;
+}
+
+.oranye {
+    background-color: rgb(255, 123, 0);
+    top: 90px;
+    left: 160px;
+    right: 20px;
+    height: 70px;
+}
+
+.hijau {
+    background-color: lightgreen;
+    top: 170px;
+    left: 20px;
+    width: 120px;
+    bottom: 80px;
+}
+
+.abu {
+    background-color: lightgray;
+    top: 170px;
+    left: 160px;
+    right: 160px;
+    bottom: 80px;
+}
+
+.biru-muda {
+    background-color: deepskyblue;
+    top: 170px;
+    right: 20px;
+    width: 120px;
+    bottom: 80px;
+}
+
+.biru-tua {
+    background-color: blue;
+    bottom: 20px;
+    left: 20px;
+    right: 20px;
+    height: 50px;
+}
