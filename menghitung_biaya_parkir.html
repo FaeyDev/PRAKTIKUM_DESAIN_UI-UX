@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitung Biaya Parkir</title>
+
+    <link rel="stylesheet" href="style3.css">
+</head>
+
+<body>
+
+    <div class="card">
+        <h2>Kalkulator Parkir</h2>
+
+        <div class="input-group">
+            <label for="jamMasuk">Jam Masuk (0-24):</label>
+            <input type="number" id="jamMasuk" placeholder="Contoh: 7">
+        </div>
+
+        <div class="input-group">
+            <label for="jamKeluar">Jam Keluar (0-24):</label>
+            <input type="number" id="jamKeluar" placeholder="Contoh: 11">
+        </div>
+
+        <button onclick="hitungBiaya()">Hitung Biaya</button>
+
+        <div id="hasilBox" class="result">
+            <p>Lama Parkir: <span id="durasiText">0</span> Jam</p>
+            <h3>Total: Rp <span id="biayaText">0</span></h3>
+        </div>
+    </div>
+
+    <script src="script3.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitung Lingkaran</title>
+    <link rel="stylesheet" href="style2.css">
+</head>
+
+<body>
+
+    <div class="card">
+        <h2>Kalkulator Lingkaran</h2>
+        <p>Menghitung Luas & Keliling berdasarkan Jari-jari (r)</p>
+
+        <div class="input-group">
+            <label for="jariJari">Masukkan Jari-jari (cm):</label>
+            <input type="number" id="jariJari" placeholder="Contoh: 7 atau 10">
+        </div>
+
+        <button onclick="hitung()">Hitung Sekarang</button>
+
+        <div id="hasilBox" class="result" style="display: none;">
+            <div class="result-item">
+                <span>Luas:</span>
+                <span id="txtLuas" class="angka">0</span> cm²
+            </div>
+            <div class="result-item">
+                <span>Keliling:</span>
+                <span id="txtKeliling" class="angka">0</span> cm
+            </div>
+        </div>
+    </div>
+
+    <script src="script2.js"></script>
+</body>
+
+</html>

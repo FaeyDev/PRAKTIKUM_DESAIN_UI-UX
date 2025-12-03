@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi Mata Uang</title>
+    <link rel="stylesheet" href="style1.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Konverter Kurs</h1>
+        <p class="kurs-info">Kurs saat ini: 1 USD = Rp 16.688</p>
+
+        <div class="card">
+            <h3>Dolar ($) ke Rupiah (Rp)</h3>
+            <div class="input-group">
+                <label for="inputDolar">Jumlah Dolar ($):</label>
+                <input type="number" id="inputDolar" placeholder="Masukkan angka dolar...">
+            </div>
+            <button onclick="hitungKeRupiah()">Konversi ke Rupiah</button>
+            <div id="hasilRupiah" class="result">Hasil: -</div>
+        </div>
+
+        <div class="card">
+            <h3>Rupiah (Rp) ke Dolar ($)</h3>
+            <div class="input-group">
+                <label for="inputRupiah">Jumlah Rupiah (Rp):</label>
+                <input type="number" id="inputRupiah" placeholder="Masukkan angka rupiah...">
+            </div>
+            <button onclick="hitungKeDolar()">Konversi ke Dolar</button>
+            <div id="hasilDolar" class="result">Hasil: -</div>
+        </div>
+    </div>
+
+    <script src="script1.js"></script>
+</body>
+
+</html>
