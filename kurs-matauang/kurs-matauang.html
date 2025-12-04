@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi Kurs Mata Uang</title>
+    <link rel="stylesheet" href="style4.css">
+</head>
+
+<body>
+
+    <div class="converter-container">
+        <h1>Konversi Mata Uang</h1>
+
+        <form id="currency-form">
+            <div class="form-group">
+                <label for="foreign-amount">Nilai Mata Uang Asing</label>
+                <input type="number" id="foreign-amount" placeholder="Masukkan nilai" min="0" step="any">
+            </div>
+
+            <div class="form-group">
+                <label for="currency-select">Jenis Mata Uang Asing</label>
+                <select id="currency-select">
+                    <option value="" disabled selected>-- Pilih Mata Uang --</option>
+                    <option value="USD">Dollar US</option>
+                    <option value="SGD">Dollar Singapore</option>
+                    <option value="MYR">Ringgit Malaysia</option>
+                    <option value="JPY">Yen Jepang</option>
+                    <option value="EUR">Euro</option>
+                    <option value="SAR">Riyal Arab Saudi</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="rupiah-result">Nilai Rupiah</label>
+                <input type="text" id="rupiah-result" placeholder="Hasil konversi" readonly>
+            </div>
+        </form>
+    </div>
+
+    <script src="kurs_matauang.js"></script>
+</body>
+
+</html>

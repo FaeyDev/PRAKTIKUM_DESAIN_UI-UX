@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Login</title>
+    <link rel="stylesheet" href="style5.css">
+</head>
+<body>
+    <div class="login-container">
+        <form id="login-form">
+            <h1>Masuk</h1>
+
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input type="text" id="username" name="username" placeholder="Masukkan Username anda" required>
+            </div>
+
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Masukkan Kata Sandi anda" required>
+            </div>
+
+            <p id="error-message" class="error"></p>
+
+            <button type="submit">Login</button>
+
+            <div class="loading" id="loading">
+                <div class="spinner"></div>
+                <p>Sedang memproses...</p>
+            </div>
+        </form>
+
+        <div class="extra-links">
+            <p>Belum punya akun? <a href="#">Daftar</a></p>
+            <p>Lupa Password? <a href="#">Lupa password</a></p>
+        </div>
+    </div>
+
+    <script src="otentikasi.js"></script>
+</body>
+
+</html>
